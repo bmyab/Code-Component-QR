@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--Light-gray);
+}
+.wrapper{
+  padding: 1.5rem;
+}
+.card{
+  max-width: 34rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: var(--White);
+  border-radius: 1.5rem;
+}
+.card__img{
+  width: 100%;
+  border-radius: inherit;
+}
+.card__texts{
+  padding-block-start: 1.5rem;
+  padding-block-end: 2.5rem;
+  margin-inline: 2.2rem;
+  color: var(--Grayish-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card__texts .title{
+  color: var(--Dark-blue);
+  font-weight: 700;
+}
+.card__texts .paragraph{
+  font-size: 1.6rem;
+}
+@media screen and (min-width:920px){
+  .card{
+    max-width:37.5rem
+  }
+  .card__texts .title{
+    font-size: 2.5rem;
+  }
+  .card__texts .paragraph{
+    font-size: 1.8rem;
+  }
+}
